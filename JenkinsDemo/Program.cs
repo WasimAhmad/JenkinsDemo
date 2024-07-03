@@ -10,7 +10,7 @@ namespace JenkinsDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Jenkins CI/CD!....");
+            Console.WriteLine("Hello, Jenkins CI/CD!");
             Console.ReadLine();
         }
     }
