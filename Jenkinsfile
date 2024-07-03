@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'JenkinsDemo/bin\Release\*.exe', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'JenkinsDemo/bin/Release/*.exe', allowEmptyArchive: true
             }
         }
     }
