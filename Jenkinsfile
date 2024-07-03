@@ -4,6 +4,13 @@ agent { label 'win-agent' }
         githubPush()
     }
     stages {
+        stage('Restore NuGet Packages') {
+            steps {
+                script {
+                    bat 'nuget restore JenkinsDemo.sln'
+                }
+            }
+        }
         stage('Build') {
             steps {
                 script {
