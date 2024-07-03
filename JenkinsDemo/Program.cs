@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace JenkinsDemo
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Jenkins CI/CD!!!!");
-            Console.WriteLine("CI/CD is working fine.");
+            Console.WriteLine(GetHelloWorld());
             Console.ReadLine();
+        }
+
+        public static string GetHelloWorld()
+        {
+            return "Hello, Jenkins CI/CD!";
         }
     }
 }
