@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+agent { label 'win-agent' } 
     triggers {
         githubPush()
     }
